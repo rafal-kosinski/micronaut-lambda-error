@@ -1,0 +1,18 @@
+micronaut:
+  function:
+    name: any-lambda
+  http:
+  application:
+    name: any-lambda
+  server:
+    port: 8080
+
+aws:
+  client:
+    socket-timeout: 900000
+  lambda:
+    functions:
+      any-lambda:
+        functionName: any-lambda
+        qualifier: 1
+    region: eu-west-1
